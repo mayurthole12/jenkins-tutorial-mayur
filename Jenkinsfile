@@ -8,9 +8,9 @@ pipeline {
     environment {
 	  region = "us-east-1"
         docker_repo_uri = "860391287505.dkr.ecr.us-east-1.amazonaws.com/sample-app"
-        task_def_arn = ""
-        cluster = ""
-        exec_role_arn = ""
+        task_def_arn = "arn:aws:ecs:us-east-1:860391287505:task-definition/first-run-task-definition:2"
+        cluster = "default"
+        exec_role_arn = "arn:aws:iam::860391287505:role/ecsTaskExecutionRole"
     }
     
     // Here you can define one or more stages for your pipeline.
